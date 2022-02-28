@@ -22,7 +22,7 @@ body {
 }
 
 .container {
-    max-width: 1140px;
+    width: 75%;
     margin: 0 auto;
 }
 
@@ -286,4 +286,50 @@ body {
     margin: 20px auto;
     font-size: 16px;
     margin: 10px;
+}
+
+/* IPAD RESPONSIVE */
+@media screen and (max-width: 810px) {
+    .container {
+        width: 90%;
+    }
+    .cross, .check{
+        width: 25px;
+        height: 22px;
+        font-size: 13px;
+    }
+    .social-icon{
+        width: 20px;
+        height: 20px;
+        margin: 0px 5px;
+    }
+    .footer{
+        justify-content: space-between;
+    }
+}
+
+
+/* MOBILE RESPONSIVE */
+@media screen and (max-width: 500px) {
+    .container {
+        width: 95%;
+    }
+    .cross, .check{
+        width: 25px;
+        height: 22px;
+        font-size: 13px;
+    }
+    .social-icon{
+        width: 20px;
+        height: 20px;
+        margin: 0px 5px;
+    }
+    .pricing{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .pricing-card{
+        flex: 100%;
+    }
 }
